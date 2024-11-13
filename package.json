@@ -1,8 +1,8 @@
 {
-  "name": "phaser3-custom-build",
-  "version": "2.0.0",
+  "name": "phaser-custom",
+  "version": "3.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/phaser.js",
   "scripts": {
     "build": "webpack",
     "buildlog": "webpack --json --profile > webpack.build-log.json",
@@ -15,11 +15,12 @@
     "buildfull": "webpack --config webpack.config-full.js",
     "buildfulllog": "webpack --config webpack.config-full.js --json --profile > webpack.build-full-log.json",
     "buildcore": "webpack --config webpack.config-core.js",
-    "buildcorelog": "webpack --config webpack.config-core.js --json --profile > webpack.build-core-log.json"
+    "buildcorelog": "webpack --config webpack.config-core.js --json --profile > webpack.build-core-log.json",
+    "buildforhatchlings": "webpack --config webpack.config-hatchlings.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/photonstorm/phaser3-custom-build.git"
+    "url": "git+https://github.com/hatchlings/phaser-custom.git"
   },
   "author": "Richard Davey <rich@photonstorm.com> (http://www.photonstorm.com)",
   "license": "MIT",
@@ -30,12 +31,13 @@
   "dependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "eventemitter3": "^5.0.1",
-    "phaser": "^3.60.0",
-    "terser-webpack-plugin": "^5.3.9",
-    "webpack": "^5.89.0",
+    "phaser": "^3.86.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
   },
   "devDependencies": {
-    "prettier": "3.0.3"
+    "prettier": "3.3.3"
   }
 }
+
