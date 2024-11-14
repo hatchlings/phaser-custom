@@ -46,6 +46,7 @@ var Phaser = {
         Image: require('gameobjects/image/Image'),
         // Layer: require('gameobjects/layer/Layer'),
         Particles: require('gameobjects/particles'),
+        RenderTexture: require('gameobjects/rendertexture/RenderTexture'),
         Sprite: require('gameobjects/sprite/Sprite'),
         Text: require('gameobjects/text/Text'),
 
@@ -60,6 +61,7 @@ var Phaser = {
             Image: require('gameobjects/image/ImageFactory'),
             // Layer: require('gameobjects/layer/LayerFactory'),
             Particles: require('gameobjects/particles/ParticleEmitterFactory'),
+            RenderTexture: require('gameobjects/rendertexture/RenderTextureFactory'),
             Sprite: require('gameobjects/sprite/SpriteFactory'),
             Text: require('gameobjects/text/TextFactory'),
 
