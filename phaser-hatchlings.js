@@ -152,7 +152,7 @@ var Phaser = {
     // Structs: require('structs'),
     Textures: require('textures'),
     // Tilemaps: require('tilemaps'),
-    // Time: require('time'),
+    Time: require('time'),
     Tweens: require('tweens'),
     // Utils: require('utils')
 
