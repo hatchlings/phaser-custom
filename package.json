@@ -1,8 +1,12 @@
 {
   "name": "phaser-custom",
-  "version": "3.0.0",
+  "version": "3.86.0",
   "description": "",
   "main": "dist/phaser.js",
+  "browser": "dist/phaser.js",
+  "files" : [
+    "dist"
+  ],
   "scripts": {
     "build": "webpack",
     "buildlog": "webpack --json --profile > webpack.build-log.json",
