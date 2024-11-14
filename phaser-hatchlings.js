@@ -53,6 +53,7 @@ var Phaser = {
             Group: require('gameobjects/group/GroupFactory'),
             Image: require('gameobjects/image/ImageFactory'),
             Layer: require('gameobjects/layer/LayerFactory'),
+            Particles: require('gameobjects/particles/ParticleEmitterFactory'),
             Sprite: require('gameobjects/sprite/SpriteFactory'),
             Text: require('gameobjects/text/TextFactory'),
         },
@@ -61,11 +62,15 @@ var Phaser = {
             Group: require('gameobjects/group/GroupCreator'),
             Image: require('gameobjects/image/ImageCreator'),
             Layer: require('gameobjects/layer/LayerCreator'),
+            Particles: require('gameobjects/particles/ParticleEmitterCreator'),
             Sprite: require('gameobjects/sprite/SpriteCreator'),
             Text: require('gameobjects/text/TextCreator'),
         }
     },
-    // Geom: require('geom'),
+    Geom: {
+        Circle: require('geom/circle'),
+        Rectangle: require('geom/rectangle'),
+    },
     Input: require('input'),
     Loader: {
         FileTypes: {
