@@ -41,24 +41,28 @@ var Phaser = {
         BuildGameObject: require('gameobjects/BuildGameObject'),
         BuildGameObjectAnimation: require('gameobjects/BuildGameObjectAnimation'),
         GameObject: require('gameobjects/GameObject'),
-        Graphics: require('gameobjects/graphics/Graphics.js'),
+        Graphics: require('gameobjects/graphics/Graphics'),
+        Group: require('gameobjects/group/Group'),
         Image: require('gameobjects/image/Image'),
         Layer: require('gameobjects/layer/Layer'),
+        Particles: require('gameobjects/particles'),
         Sprite: require('gameobjects/sprite/Sprite'),
         Text: require('gameobjects/text/Text'),
         Factories: {
             Graphics: require('gameobjects/graphics/GraphicsFactory'),
+            Group: require('gameobjects/group/GroupFactory'),
             Image: require('gameobjects/image/ImageFactory'),
             Layer: require('gameobjects/layer/LayerFactory'),
             Sprite: require('gameobjects/sprite/SpriteFactory'),
-            Text: require('gameobjects/text/TextFactory')
+            Text: require('gameobjects/text/TextFactory'),
         },
         Creators: {
             Graphics: require('gameobjects/graphics/GraphicsCreator'),
+            Group: require('gameobjects/group/GroupCreator'),
             Image: require('gameobjects/image/ImageCreator'),
             Layer: require('gameobjects/layer/LayerCreator'),
             Sprite: require('gameobjects/sprite/SpriteCreator'),
-            Text: require('gameobjects/text/TextCreator')
+            Text: require('gameobjects/text/TextCreator'),
         }
     },
     // Geom: require('geom'),
@@ -73,11 +77,11 @@ var Phaser = {
             ImageFile: require('loader/filetypes/ImageFile'),
             JSONFile: require('loader/filetypes/JSONFile'),
             MultiAtlasFile: require('loader/filetypes/MultiAtlasFile'),
-            PluginFile: require('loader/filetypes/PluginFile'),
-            ScriptFile: require('loader/filetypes/ScriptFile'),
+            // PluginFile: require('loader/filetypes/PluginFile'),
+            // ScriptFile: require('loader/filetypes/ScriptFile'),
             SpriteSheetFile: require('loader/filetypes/SpriteSheetFile'),
-            TextFile: require('loader/filetypes/TextFile'),
-            XMLFile: require('loader/filetypes/XMLFile')
+            // TextFile: require('loader/filetypes/TextFile'),
+            // XMLFile: require('loader/filetypes/XMLFile')
         },
         File: require('loader/File'),
         FileTypesManager: require('loader/FileTypesManager'),
@@ -89,8 +93,10 @@ var Phaser = {
         XHRSettings: require('loader/XHRSettings')
     },
     Math: require('math'),
-    Physics: require('physics'),
-    // Plugins: require('plugins'),
+    Physics: {
+        Arcade: require('physics/arcade')
+    },
+    Plugins: require('plugins'),
     Renderer: require('renderer'),
     Scale: require('scale'),
     ScaleModes: require('renderer/ScaleModes'),
