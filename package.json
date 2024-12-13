@@ -1,6 +1,6 @@
 {
   "name": "phaser-custom",
-  "version": "3.86.0",
+  "version": "3.87.0",
   "description": "",
   "main": "dist/phaser.js",
   "browser": "dist/phaser.js",
@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.config-hatchlings.js",
     "buildlog": "webpack --json --profile > webpack.build-log.json",
     "buildsprite": "webpack --config webpack.config-sprite.js",
     "buildspritelog": "webpack --config webpack.config-sprite.js --json --profile > webpack.build-sprite-log.json",
@@ -35,7 +35,7 @@
   "dependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "eventemitter3": "^5.0.1",
-    "phaser": "^3.86.0",
+    "phaser": "^3.87.0",
     "terser-webpack-plugin": "^5.3.10",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
