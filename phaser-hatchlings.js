@@ -14,7 +14,9 @@ var Extend = require('utils/object/Extend');
  */
 
 var Phaser = {
-    // Actions: require('actions'),
+    Actions: {
+        PlaceOnLine: require('actions/PlaceOnLine')
+    },
     // Animations: require('animations'),
     // BlendModes: require('renderer/BlendModes'),
     // Cache: require('cache'),
@@ -81,6 +83,7 @@ var Phaser = {
         }
     },
     Geom: {
+        Line: require('geom/line'),
         Circle: require('geom/circle'),
         Rectangle: require('geom/rectangle'),
     },
