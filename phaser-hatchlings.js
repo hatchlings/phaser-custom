@@ -78,6 +78,7 @@ var Phaser = {
             Image: require('gameobjects/image/ImageCreator'),
             // Layer: require('gameobjects/layer/LayerCreator'),
             Particles: require('gameobjects/particles/ParticleEmitterCreator'),
+            RenderTexture: require('gameobjects/rendertexture/RenderTextureCreator'),
             Sprite: require('gameobjects/sprite/SpriteCreator'),
             Text: require('gameobjects/text/TextCreator'),
         }
