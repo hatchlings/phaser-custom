@@ -29,6 +29,9 @@ var Phaser = {
     Curves: require('curves'),
     // Data: require('data'),
     // Display: require('display'),
+    Display: {
+        Masks: require('display/mask'),
+    },
     // DOM: require('dom'),
     Events: require('events/index'),
     FX: require('fx'),
