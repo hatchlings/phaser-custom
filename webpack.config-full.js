@@ -8,8 +8,8 @@ module.exports = {
     mode: "production",
 
     entry: {
-        "phaser-full": `./phaser-full.js`,
-        "phaser-full.min": "./phaser-full.js",
+        "phaser": `./phaser-full.js`,
+        "phaser.min": "./phaser-full.js",
     },
 
     resolve: {
